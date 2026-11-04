@@ -28,9 +28,15 @@ for user, data in siem_logs.items():
     print(f"{data}")
     attempts = data.get('failed_attempts', 0)
     if attempts >5:
+        
         data['status'] = 'locked'
         print(f'{user} has been locked')
 
 for value in siem_logs.values():
     value['2FA_enabled'] = True
-    
+
+for user, data in siem_logs.items():
+    usname = data['username']
+    stat = data['status']
+    twofa = data['2FA_enabled']
+    print(f'Audit complete | ID: {user} | USERNAME: {usname} | STATUS: {stat} | 2FA: {twofa}')
