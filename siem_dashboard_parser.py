@@ -30,7 +30,7 @@ for user, data in siem_logs.items():
     if attempts >5:
         
         data['status'] = 'locked'
-        print(f'{user} has been locked')
+        print(f'Too many failed attempts...{user} has been locked')
 
 for value in siem_logs.values():
     value['2FA_enabled'] = True
