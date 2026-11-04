@@ -35,8 +35,10 @@ for user, data in siem_logs.items():
 for value in siem_logs.values():
     value['2FA_enabled'] = True
 
+print(f'---- SIEM Dashboard----')
 for user, data in siem_logs.items():
     usname = data['username']
     stat = data['status']
     twofa = data['2FA_enabled']
+    
     print(f'Audit complete | ID: {user} | USERNAME: {usname} | STATUS: {stat} | 2FA: {twofa}')
