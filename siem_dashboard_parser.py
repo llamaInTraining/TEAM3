@@ -1,6 +1,13 @@
-#Adam Mohamed, Rached Aissa, Joseph Sanchez, Omer Faruk
-
-#dictionary with user information -username, status, number of attempts
+# Adam Mohamed, Rached Aissa, Joseph Sanchez, Omer Faruk
+# Identify brute-force attack signatures within incoming SIEM logs.
+# Iterate through nested dictionaries using Python.
+# Detect suspicious authentication activity using failed login attempts.
+# Handle incomplete or malformed log entries without crashing the program.
+# Use safe dictionary extraction methods to prevent errors.
+# Add new security compliance flags to existing datasets.
+# Automate security log analysis using Python data structures.
+# Process and analyze JSON-like security log data.
+# Dictionary with user information -username, status, number of attempts
 siem_logs = {
     'user_001': {
         'username': 'jdoe',
