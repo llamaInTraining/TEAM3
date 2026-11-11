@@ -35,7 +35,7 @@ for user, data in siem_logs.items():
     print(f"{user}")
     print(f"{data}")
 
-    #get prevents user_0004 from causing a syntax error since it has no failed attempts.
+    #get prevents user_0004 from causing a syntax error since it has no failed attempt key and value
     attempts = data.get('failed_attempts', 0)
     if attempts >5:
         #changes the status from active to locked if failed attempts are higher than 5
